@@ -25,14 +25,11 @@ wss.on('connection', function connection(ws) {
     });
 
 
-    if(message == "31"){
-        console.log("Komik");
-        ws.send('Komik');
+    if(message == "test"){
+        console.log("OK");
+        ws.send('OK');
     }
-    if(message == "62"){
-        console.log("Daha Komik");
-        ws.send('Daha Komik');
-    }
+    
     
   });
 });
